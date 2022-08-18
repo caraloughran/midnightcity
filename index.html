@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>midnight city</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="game.html">play</a></li>
+        <li id="logo">midnight city</li>
+    </ul>
+    <h1 id="header">hello, and welcome</h1>
+    <p id="presite">midnight city is a small web page dedicated to calm studying.</p>
+    <div id="spotifyembed">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/59LUwJVpBHWjxyKDDuz4Ld?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <form id="test">
+        <label for="goal1">would you like to set a timed goal today?</label><br><br>
+        <input id="goal1" type="text" name="goal" placeholder="write goal here" onclick="testFunction()"><br>
+        <button type="button" id="submitbutton" onclick="timerFunction()" >submit</button><br>
+    </form>
+
+    <form id="timerForm">
+        <p>how long would you like to work on your goal?</p>
+        <input id="15m" type="radio" name="15m" value="15 minutes">
+        <label for="15m">fifteen minutes</label><br>
+        <input id="30m" type="radio" name="30m" value="30 minutes">
+        <label for="30m">thirty minutes</label><br>
+        <input id="1h" type="radio" name="1h" value="1 hour">
+        <label for="1h">one hour</label><br>
+        <input id="2h" type="radio" name="2h" value="2 hours">
+        <label for="2h">two hours</label><br>
+        <input id="3h" type="radio" name="3h" value="3 hours">
+        <label for="3h">three hours</label><br><br>
+        <button type="button" id="timerSubmit" onclick="testFunction()">submit</button>
+    </form>
+
+    <div id="goalarea">
+        <div id="container">
+            <p id="todaysgoal">today's goal:</p>
+        </div>
+        <div id="rectangle1"></div>
+        <div id="rectangle2"></div>
+        <div id="yourgoal">
+            <span id="output"></span>
+            <div id="timer">
+                hours: <span class="hours"></span><br>
+                minutes: <span class="minutes"></span><br>
+                seconds: <span class="seconds"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

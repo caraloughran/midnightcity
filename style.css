@@ -1,0 +1,149 @@
+body {
+    background-color:black;
+    font-family:arial;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background: linear-gradient(50deg,
+     #7a039e,
+     rgb(59, 121, 171),
+     rgb(18, 18, 167)  )
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 14px 26px;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color:black;
+    color:white;
+}
+
+#header {
+    color:white;
+    margin-left:30px;
+    font-family:'Space Mono', monospace;
+    float:left;
+}
+
+#spotifyembed {
+    width:600px;
+    float:right;
+}
+
+#presite {
+    color:white;
+    margin-left:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    float:left;
+    clear:left;
+}
+
+#test {
+    color:white;
+    margin-left:30px;
+    float:left;
+}
+
+#goal1 {
+    padding:10px;
+    border:2px solid white;
+    border-radius:5px;
+    width:200px;
+}
+
+#submitbutton {
+    border:2px solid white;
+    border-radius:5px;
+    color:rgb(118, 118, 118);
+    padding:3px 3px;
+    width:225px;
+    text-align:center;
+    margin-top:5px;
+}
+
+#logo {
+    display:block;
+    overflow:hidden;
+    color:white;
+    float:right;
+    margin:0;
+    padding:12px 25px;
+    list-style-type:none;
+    font-family:'Space Mono', monospace;
+}
+
+#timerForm {
+    color:white;
+    float:left;
+    clear:left;
+    margin-left:30px;
+}
+
+#goalarea {
+    background-color:white;
+    color:black;
+    border:0px solid white;
+    border-radius:5px;
+    float:left;
+    clear:left;
+    margin-left:30px;
+    margin-top:30px;
+    width:432px;
+}
+
+#todaysgoal {
+    color:rgb(118, 118, 118);
+    height:5px;
+    padding-left:10px;
+}
+
+#yourgoal {
+    height:250px;
+    margin-left:30px;
+}
+
+#output {
+    color:black;
+    clear:left;
+    float:left;
+    margin-top:8px;
+    clear:none;
+}
+
+#rectangle1 {
+    height:260px;
+    width:10px;
+    background: linear-gradient(50deg,
+     #7a039e,
+     rgb(59, 121, 171),
+     rgb(18, 18, 167)  );
+    float:left;
+}
+
+#rectangle2 {
+    width:432px;
+    height:10px;
+    clear:none;
+    background: linear-gradient(50deg,
+    rgb(18, 18, 167),
+    rgb(59, 121, 171),
+    #7a039e );
+}
+
+#timer {
+    color:black;
+    padding-top:180px;
+}
