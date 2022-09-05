@@ -7,6 +7,7 @@ let timer = document.getElementById('timer');
 
 timerForm.style.display='none';
 goal.style.display='none';
+timer.style.display='none'; 
 
 header.addEventListener ("click", langFunction);
 
@@ -51,6 +52,13 @@ function getTimeRemaining(endtime) {
     };
 }
 
+function initializeTimer () {
+    let timer = document.getElementById('timer');
+    let hoursSpan = timer.querySelector('.hours');
+    let minutesSpan = timer.querySelector('.minutes');
+    let secondsSpan = timer.querySelector('.seconds');
+}
+
 function updateTimer() {
     let t = getTimeRemaining(endtime);
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -69,5 +77,5 @@ let minutesSpan = timer.querySelector('.minutes');
 let secondsSpan = timer.querySelector('seconds');
 
 let fifteenMinutes = 15;
-let fifteenDeadline = new Date(currentTime + fifteenMinutes*60*1000);
-initializeTimer('timer', fifteenDeadline);
+let deadline = new Date(currentTime + fifteenMinutes*60*1000);
+initializeTimer('timer', deadline);
