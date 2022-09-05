@@ -1,0 +1,69 @@
+body {
+    background-color:black;
+    font-family:arial;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background: linear-gradient(50deg,
+     #7a039e,
+     rgb(59, 121, 171),
+     rgb(18, 18, 167)  )
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 14px 26px;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color:black;
+    color:white;
+}
+
+#presite {
+    color:white;
+    margin-left:30px;
+    margin-bottom:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    float:left;
+    clear:left;
+}
+
+
+#header {
+    color:white;
+    margin-left:30px;
+    font-family:'Space Mono', monospace;
+    float:left;
+}
+
+#logo {
+    display:block;
+    overflow:hidden;
+    color:white;
+    float:right;
+    margin:0;
+    padding:12px 25px;
+    list-style-type:none;
+    font-family:'Space Mono', monospace;
+}
+
+#myCanvas {
+    background-color: rgb(59, 121, 171);
+    border:2px solid black;
+    border-radius:5px;
+    display:block;
+    margin: 0 auto;
+    clear:left;
+}
