@@ -147,3 +147,9 @@ li a:hover {
     color:black;
     padding-top:180px;
 }
+
+#footer {
+    color:white;
+    margin-top:550px;
+    font-size:10px;
+}
