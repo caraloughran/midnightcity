@@ -11,6 +11,9 @@
     <title>midnight city</title>
 </head>
 <body>
+    <audio id="alarm">
+        <source src="notif.mp3" type="audio/mpeg">
+    </audio>
     <ul>
         <li><a href="index.html">home</a></li>
         <li><a target="_blank" href="game.html">play</a></li>
@@ -30,17 +33,19 @@
 
     <form id="timerForm">
         <p>how long would you like to work on your goal?</p>
-        <input id="15m" type="radio" name="15m" value="15 minutes">
+        <input id="30s" type="radio" name="timevalue" value="30 seconds">
+        <label for="30s">thirty seconds</label><br>
+        <input id="15m" type="radio" name="timevalue" value="15 minutes">
         <label for="15m">fifteen minutes</label><br>
-        <input id="30m" type="radio" name="30m" value="30 minutes">
+        <input id="30m" type="radio" name="timevalue" value="30 minutes">
         <label for="30m">thirty minutes</label><br>
-        <input id="1h" type="radio" name="1h" value="1 hour">
+        <input id="1h" type="radio" name="timevalue" value="1 hour">
         <label for="1h">one hour</label><br>
-        <input id="2h" type="radio" name="2h" value="2 hours">
+        <input id="2h" type="radio" name="timevalue" value="2 hours">
         <label for="2h">two hours</label><br>
-        <input id="3h" type="radio" name="3h" value="3 hours">
+        <input id="3h" type="radio" name="timevalue" value="3 hours">
         <label for="3h">three hours</label><br><br>
-        <button type="button" id="timerSubmit" onclick="testFunction()">submit</button>
+        <button type="button" id="timerSubmit" onclick="testFunction(), checkFunction()">submit</button>
     </form>
 
     <div id="goalarea">
@@ -52,14 +57,19 @@
         <div id="yourgoal">
             <span id="output"></span>
             <div id="timer">
-                hours: <span class="hours"></span><br>
-                minutes: <span class="minutes"></span><br>
-                seconds: <span class="seconds"></span>
+                <span class="hours"></span><br>
+                <span class="minutes"></span><br>
+                <span class="seconds"></span><br>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+
+    <footer id="footer">
+        <p>it is recommended that users keep midnight city open in its own window</p>
+        <p>&copy; cara loughran</p>
+    </footer>
     
 </body>
 </html>
