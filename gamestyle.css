@@ -59,6 +59,24 @@ li a:hover {
     font-family:'Space Mono', monospace;
 }
 
+#gameButton {
+    display:block;
+    clear:both;
+    margin:auto;
+    margin-bottom:20px;
+    border:2px solid white;
+    height:30px;
+    color:white;
+    border-radius:5px;
+    padding: 3px 3px;
+    width:150px;
+    font-family:'Space Mono', monospace;
+    background: linear-gradient(50deg,
+     #7a039e,
+     rgb(59, 121, 171),
+     rgb(18, 18, 167)  )
+}
+
 #myCanvas {
     background-color: rgb(59, 121, 171);
     border:2px solid black;
