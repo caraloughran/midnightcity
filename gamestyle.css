@@ -85,3 +85,9 @@ li a:hover {
     margin: 0 auto;
     clear:left;
 }
+
+#footer {
+    color:white;
+    margin-top:550px;
+    font-size:10px;
+}
