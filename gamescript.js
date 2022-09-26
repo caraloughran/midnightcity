@@ -20,7 +20,7 @@ function endGameFunction() {
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
-var x = Math.random()*(480 - 1) + 1;
+var x = Math.random()*(479.9 - 1.1) + 1;
 var y = canvas.height - 30;
 var dx = 2;
 var dy = -2;
